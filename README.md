@@ -1,1 +1,1 @@
-# Página de Recita
+# Página de Receita
