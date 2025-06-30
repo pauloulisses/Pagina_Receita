@@ -4,13 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Receita</title>
+    <title>Receitas Deliciosas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header>
+        <h1>Receitas Deliciosas</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#receitas">Receitas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
     <div id="page">
-        <img src="" alt="">
+        <img src="assets/main-image (1).png" alt="imagem de cupcake de café com chantilly">
         <main>
+            <section id="inicio">
+                <!-- Conteúdo da seção Início -->
+            </section>
+            <section id="receitas">
+                <!-- Conteúdo da seção Receitas -->
+            </section>
+            <section id="contato">
+                <h2>Fale Conosco</h2>
+                <div class="contato-container">
+                    <form class="contato-form">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem"
+                                required></textarea>
+                        </div>
+                        <button type="submit">Enviar Mensagem</button>
+                    </form>
+                    <div class="contato-info">
+                        <h3>Outros canais</h3>
+                        <p>
+                            <span class="contato-icon">📧</span>
+                            <a href="mailto:contato@receitasdeliciosas.com">contato@receitasdeliciosas.com</a>
+                        </p>
+                        <p>
+                            <span class="contato-icon">📸</span>
+                            <a href="https://instagram.com/" target="_blank">@receitasdeliciosas</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
             <section id="about">
                 <h1>Cupcake de café com chantilly</h1>
                 <p>O bolinho perfeito para acompanhar o café de todos os dias. É muito fácil e ainda por cima fica
@@ -56,6 +105,10 @@
             </section>
         </main>
     </div>
+    <footer>
+        <p>&copy; 2025 Receitas Deliciosas. Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>
+<style>

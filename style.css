@@ -1,0 +1,222 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-image: url('assets/bg-image.png');
+    background-repeat: no-repeat;      /* Evita repetição da imagem */
+    background-size: cover;            /* Faz a imagem cobrir toda a tela */
+    background-position: center;       /* Centraliza a imagem */
+    color: #333;
+    min-height: 100vh;
+}
+
+header {
+    background: rgba(255,255,255,0.95);
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #e67e22;
+}
+
+main {
+    max-width: 700px;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    padding: 30px;
+}
+
+.receita img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+img {
+    border-radius: 16px;
+}
+
+h2 {
+    color: #e67e22;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-top: 25px;
+    color: #555;
+}
+
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(255,255,255,0.9);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.95rem;
+    color: #888;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos para o formulário de contato */
+.contato-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contato-form {
+    flex: 2;
+    background: #fafafa;
+    padding: 24px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contato-form label {
+    font-weight: 600;
+    color: #444;
+}
+
+.contato-form input,
+.contato-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #fff;
+    transition: border 0.2s;
+}
+
+.contato-form input:focus,
+.contato-form textarea:focus {
+    border: 1.5px solid #e67e22;
+    outline: none;
+}
+
+.contato-form button {
+    width: 160px;
+    padding: 12px;
+    background: #e67e22;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: background 0.2s;
+}
+
+.contato-form button:hover {
+    background: #cf711f;
+}
+
+.contato-info {
+    flex: 1;
+    background: #fff;
+    padding: 24px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    font-size: 1.05rem;
+    color: #444;
+    min-width: 220px;
+}
+
+.contato-info h3 {
+    margin-bottom: 16px;
+    color: #e67e22;
+    font-size: 1.15rem;
+}
+
+.contato-info p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.contato-info a {
+    color: #e67e22;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.contato-info a:hover {
+    text-decoration: underline;
+}
+
+.contato-icon {
+    font-size: 1.3em;
+}
+
+/* Responsividade */
+@media (max-width: 800px) {
+    main {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .contato-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contato-form, .contato-info {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
